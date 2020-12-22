@@ -24,8 +24,6 @@ data-postgres.sql contains the queries to insert the data into cities table in d
 
 src/main/Resources/Templates folder - >
 
-index.html is the ui that maps to /showCities request.
-
 showCities.html is the ui that is called from RestController1 method and adds the data retrieved from repository to the ui . 
 
 Pom.xml ->
