@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width=device-width" , initial-scale="1.0">
+<title>Cities</title>
+</head>
+<body>
+ <p>This data is being retrieved from postgresql db </p>
+ <h2>List of cities</h2>
+ 
+ <table>
+ <tr>
+ <th>Id</th>
+ <th>Name</th>
+ <th>Population</th>
+ </tr>
+ 
+ <tr th:each = "city : ${cities}">
+ <td th:text="${city.id}">Id</td>
+ <td th:text="${city.name}">Name</td>
+ <td th:text="${city.population}">Population</td>
+ </tr>
+ </table>
+ 
+</body>
+</html>
